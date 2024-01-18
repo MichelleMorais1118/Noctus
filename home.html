@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/sty/style.css">
+    <link rel="icon" type="image/png" href="/assets/img/icon.png">
+    <title>Noctus</title>
+</head>
+<body>
+    <header class="cab">
+        <img src="/assets/img/logo.png" alt="" id="logo">
+        <p id="nome">Noctus</p>
+    </header>
+    <div class="container">
+        <h2>Laboratório Noctus</h2>
+        <h5>Identefique-se</h5>
+        <form onsubmit="return login()">
+            <label for="username">Usuário:</label><br>
+            <input type="text" id="username" name="username" placeholder="usuário"><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="senha"><br>
+            <button  id="entrar" type="submit">Entrar</button>
+        </form>
+    </div>
+    <script>
+
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+          
+            if (username === "Amelia Wells" && password === "Sindrome") {
+              window.location.replace("amelia.html");
+              return false;
+            } 
+            else if (username === "Conrad Ostor" && password === "FRANK"){
+                window.location.replace("conrad.html");
+                return false;
+            }
+            else if (username === "Luiz" && password === "a"){
+                window.location.replace("luiz.html");
+                return false;
+            }
+            else if (username === "Lucas" && password === "b"){
+                window.location.replace("lucas.html");
+                return false;
+            }
+            else if (username === "Guilherme" && password === "c"){
+                window.location.replace("guilherme.html");
+                return false;
+            }
+            else if (username === "Gabriel" && password === "d"){
+                window.location.replace("gabriel.html");
+                return false;
+            }
+            else if (username === "Pietro" && password === "e"){
+                window.location.replace("pietro.html");
+                return false;
+            }
+            else if (username === "nanotec" && password === "n"){
+                window.location.replace("c.html");
+                return false;
+            }
+            else if (username === "enggen" && password === "g"){
+                window.location.replace("c.html");
+                return false;
+            }
+            else if (username === "bio" && password === "i"){
+                window.location.replace("c.html");
+                return false;
+            }
+            else if (username === "fis" && password === "f"){
+                window.location.replace("c.html");
+                return false;
+            }
+            else if (username === "qui" && password === "q"){
+                window.location.replace("c.html");
+                return false;
+            }
+             else {
+              alert("Senha ou usuário inválidos");
+              return false;
+            }
+        
+            
+          }
+    </script>
+</body>
+</html>

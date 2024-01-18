@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/sty/style.css">
+    <link rel="icon" type="image/png" href="/assets/img/icon.png">
+    <title>Amelia</title>
+</head>
+<body>
+    <header class="cab">
+        <img src="" alt="">
+        <p id="nome">Noctus</p>
+    </header>
+    <div class="area">
+        <div id="intro">
+            <div id="tit">
+                <h1>Bem Vinda Amelia</h1>
+                <p>O que deseja pesquisar hoje?</p>
+            </div>
+            <a href="/home.html" id="sair">Sair</a>
+        </div>
+        <ul class="doc">
+            <li><a href="#image" onclick="changeImage1()" value="Change" > 
+                <img src="/assets/img/file.png" id="doc1" width="100" height="150"><br>Documento 1</a>
+            </li>
+            <li><a href="#image" onclick="changeImage2()" value="Change" > 
+                <img src="/assets/img/file.png" id="doc2" width="100" height="150"><br>Documento 2</a>
+            </li>
+            <li><a href="#image" onclick="changeImage3()" value="Change" > 
+                <img src="/assets/img/file.png" id="doc3" width="100" height="150"><br>Documento 3</a>
+            </li>
+            <li><a href="#image" onclick="changeImage4()" value="Change" > 
+                <img src="/assets/img/file.png" id="doc4" width="100" height="150"><br>Documento 4</a>
+            </li>
+            <li><a href="#image" onclick="changeImage5()" value="Change" > 
+                <img src="/assets/img/file.png" id="doc5" width="100" height="150"><br>Documento 5</a>
+            </li>
+             <!--
+                <li><a href="#image" onclick="changeImage6()" value="Change" > 
+                <img src="/assets/img/file.png" id="doc6" width="100" height="150"><br>Documento 5</a>
+            </li>
+            -->
+            <li><a href="#image"> 
+                <img src="/assets/img/hidden.png" width="100" height="150"></a>
+            </li>
+            <li><a href="#image"> 
+                <img src="/assets/img/hidden.png" width="100" height="150"></a>
+            </li>
+            <li><a href="#image"> 
+                <img src="/assets/img/hidden.png" width="100" height="150"></a>
+            </li>
+            <li><a href="#image"> 
+                <img src="/assets/img/hidden.png" width="100" height="150"></a>
+            </li>
+            <li><a href="#image"> 
+                <img src="/assets/img/hidden.png" width="100" height="150"></a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function changeImage1() {
+            var image = document.getElementById('doc1');
+            if (image.src.match("/assets/img/file.png")) {
+              image.src = "/assets/img/documento.png";
+            } else {
+              image.src = "/assets/img/file.png";
+            }
+        }
+        function changeImage2() {
+            var image = document.getElementById('doc2');
+            if (image.src.match("/assets/img/file.png")) {
+              image.src = "/assets/img/documento.png";
+            } else {
+              image.src = "/assets/img/file.png";
+            }
+        }
+        function changeImage3() {
+            var image = document.getElementById('doc3');
+            if (image.src.match("/assets/img/file.png")) {
+              image.src = "/assets/img/documento.png";
+            } else {
+              image.src = "/assets/img/file.png";
+            }
+        }
+        function changeImage4() {
+            var image = document.getElementById('doc4');
+            if (image.src.match("/assets/img/file.png")) {
+              image.src = "/assets/img/documento.png";
+            } else {
+              image.src = "/assets/img/file.png";
+            }
+        }
+        function changeImage5() {
+            var image = document.getElementById('doc5');
+            if (image.src.match("/assets/img/file.png")) {
+              image.src = "/assets/img/documento.png";
+            } else {
+              image.src = "/assets/img/file.png";
+            }
+        }
+        function changeImage6() {
+            var image = document.getElementById('doc6');
+            if (image.src.match("/assets/img/file.png")) {
+              image.src = "/assets/img/documento.png";
+            } else {
+              image.src = "/assets/img/file.png";
+            }
+        }
+    </script>
+</body>
+</html>
